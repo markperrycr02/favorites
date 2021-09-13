@@ -6,12 +6,12 @@ h1#title {
   text-align: center;
 }
 
-.weblinks {
+.linksContainer {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
   align-items: center;
-  background: rebeccapurple;
+  background: #41463d; /* default */
   padding: 50px;
 }
 
@@ -19,12 +19,16 @@ h1#title {
   width: 150px;
   align-items: center;
   margin-right: 20px;
+  background-color: #b8cdf8;
+}
+.buttons > button:active {
+  transform: translateY(4px);
 }
 
 .linkbox {
   height: 150px;
   width: 150px;
-  background: red;
+  background: white;
   display: flex;
   align-items: center;
   text-align: center;
@@ -34,4 +38,6 @@ h1#title {
   color: black;
   font-size: 20px;
   border-radius: 0;
+  animation: bounceIn;
+  animation-duration: 0.5s;
 }
